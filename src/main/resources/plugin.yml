@@ -1,0 +1,21 @@
+name: AdvancedEnchantmentsGUI
+version: 1.0.0
+author: 54895
+main: net.aegui.Core
+description: A GUI for viewing all enchantments in AdvancedEnchantments
+commands:
+  aegui:
+    description: Open the enchantments GUI
+    usage: /aegui
+    aliases: [enchantmentsgui, egui]
+  aegui-reload:
+    description: Reload the enchantments configuration
+    usage: /aegui-reload
+    aliases: [enchantmentsguireload, egui-reload]
+permissions:
+  advancedenchantmentsgui.use:
+    description: Allows use of the aegui command
+    default: true
+  advancedenchantmentsgui.reload:
+    description: Allows use of the aegui-reload command
+    default: op

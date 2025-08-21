@@ -1,0 +1,44 @@
+# AdvancedEnchantmentsGUI 消息配置文件
+# 在此文件中可以自定义插件中显示的所有消息
+
+# 命令相关消息
+commands:
+  # 当非玩家尝试使用命令时显示的消息
+  player_only: "§c只有玩家才可以使用这些命令！"
+  
+  # 当玩家没有权限使用命令时显示的消息
+  no_permission: "§c你没有权限使用这个命令！"
+  
+  # 搜索相关消息
+  search_prompt: "§a请输入搜索关键词，然后发送聊天消息！"
+  search_usage: "§c请输入搜索关键词！用法: /aegui search <关键词>"
+  
+  # 帮助信息
+  help:
+    header: ""
+    title: "§e§l====== AdvancedEnchantmentsGUI 帮助 ======"
+    command_help: "§a/aegui help §7- 显示此帮助信息"
+    command_open: "§a/aegui open §7- 打开附魔GUI界面"
+    command_search: "§a/aegui search <关键词> §7- 搜索特定附魔"
+    command_reload: "§a/aegui reload §7- 重载插件配置（需要权限）"
+    footer: "§e§l======================================="
+    footer_space: ""
+
+# 重载相关消息
+reload:
+  # 重载成功消息（已经在config.yml中定义，但可以在此处覆盖）
+  success: "§a成功重载了附魔配置！"
+  
+  # 重载失败消息（已经在config.yml中定义，但可以在此处覆盖）
+  failed: "§c重载附魔配置失败，请检查配置文件！"
+  
+  # 插件配置重载失败消息
+  plugin_failed: "§c重载插件配置失败！"
+
+# 自动重载通知消息
+watchdog:
+  console_prefix: "§e[AEGUI] §7"
+  player_prefix: "§e[AEGUI] §7"
+  config_reloaded: "配置文件 %file% 已自动重载"
+  message_reloaded: "消息配置文件 %file% 已自动重载"
+  groups_reloaded: "分组配置文件 %file% 已自动重载，附魔数据已更新"

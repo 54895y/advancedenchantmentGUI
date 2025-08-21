@@ -1,0 +1,71 @@
+# AdvancedEnchantmentsGUI 配置文件
+
+# GUI 设置
+gui:
+  # GUI 标题
+  title: "高级附魔"
+  
+  # 每页显示的附魔数量
+  items_per_page: 45
+  
+  # 翻页按钮设置
+  prev_button:
+    material: ARROW
+    name: "§a上一页"
+    lore:
+      - "§7点击前往上一页"
+    slot: 48
+  
+  next_button:
+    material: ARROW
+    name: "§a下一页"
+    lore:
+      - "§7点击前往下一页"
+    slot: 50
+  
+  # 搜索按钮设置
+  search_button:
+    # 搜索按钮名称
+    name: "§a搜索附魔"
+    # 搜索按钮描述
+    lore:
+      - "§7输入 /aegui <关键词> 来筛选附魔"
+      - "§7例如: /aegui 锋利"
+    slot: 49
+
+# 插件消息
+messages:
+  # 重载成功消息
+  reload_success: "§a成功重载了附魔配置！"
+  # 重载失败消息
+  reload_failed: "§c重载附魔配置失败，请检查配置文件！"
+
+# 字体设置（Minecraft中的中文字体显示通常不需要特殊配置）
+# 这里仅作为预留配置项
+font:
+  language: "chinese"
+
+# 显示文本设置
+display_text:
+  # Applies to 的显示文本
+  applies_to: "适用物品: "
+  # Group 的显示文本
+  group: "附魔组: "
+  # Levels 的显示文本
+  levels: "等级: "
+  # Chance 的显示文本
+  chance: "触发概率: "
+  # Cooldown 的显示文本
+  cooldown: "冷却时间: "
+  # Level 的显示文本
+  level: "等等级 "
+
+# Lore 模板设置
+# 使用列表格式定义lore内容，支持&符号作为颜色代码前缀
+lore_template:
+  - '&f&l%description%'
+  - '&7------------------------'
+  - '&e适用物品: &f%applies_to%'
+  - '&e附魔组: &f%group_name%'
+  - '&e等级信息:'
+  - '  &f&%level_text% %level% %chance%%cooldown%'
